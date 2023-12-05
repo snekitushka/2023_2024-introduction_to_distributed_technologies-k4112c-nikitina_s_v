@@ -56,12 +56,12 @@ minikube kubectl -- expose pod vault --type=NodePort --port=8200
 ```
 minikube kubectl -- port-forward service/vault 8200:8200
 ```
-- После выполнения данной команды появляется возможность зайти в vault по ссылке http://localhost:8200.
+- После выполнения данной команды произведен переход в vault по ссылке http://localhost:8200.
 
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/6c79c1aa-ecea-46a6-88c9-92433a522128)
 
 #### 4. Вход в Vault
-- Чтобы войти в Vault, необходимо найти токен. Для этого получим логи из контейнера в указанном поде vault:
+- Чтобы войти в Vault, необходимо найти токен. Для этого получены логи из контейнера в указанном поде vault:
 ```
 kubectl logs vault
 ```
@@ -70,6 +70,14 @@ kubectl logs vault
 - Получен доступ с помощью данных из Root Token.
 
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/93020a67-32ad-45c4-ae6c-4fcbb2a90471)
+
+### Схема организации контейнеров и сервисов:
+ФОТО
+### Ответы на вопросы:
+<ins> 1. Что сейчас произошло и что сделали команды указанные ранее? </ins>
+Ответ
+<ins> 2. Где взять токен для входа в Vault? </ins>
+Ответ
 
 
 
