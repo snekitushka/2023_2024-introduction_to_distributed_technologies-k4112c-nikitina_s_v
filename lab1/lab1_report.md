@@ -84,7 +84,9 @@ kubectl logs vault
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/93020a67-32ad-45c4-ae6c-4fcbb2a90471)
 
 ### Схема организации контейнеров и сервисов:
-ФОТО
+
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/bf2ffb31-920c-4cc2-b45f-7c42613ded2d)
+
 ### Ответы на вопросы:
 <ins> 1. Что сейчас произошло и что сделали команды указанные ранее? </ins>  
 В результате лабораторной работы было развернуто приложение HashiCorp Vault для безопасного хранения секретов.  
