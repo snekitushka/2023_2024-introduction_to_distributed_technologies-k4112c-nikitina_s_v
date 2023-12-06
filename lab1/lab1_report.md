@@ -6,7 +6,7 @@ Group: K4112c
 Author: Nikitina Snezhana Vladimirovna  
 Lab: Lab1  
 Date of create: 30.11.2023  
-Date of finished: 30.11.2023  
+Date of finished: ?.12.2023  
 
 ## Лабораторная работа №1 "Установка Docker и Minikube, мой первый манифест"
 ### Описание
