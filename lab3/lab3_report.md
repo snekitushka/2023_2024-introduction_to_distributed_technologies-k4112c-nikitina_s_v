@@ -34,7 +34,7 @@ data:
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: lab3
+  name: rs-lab3
 spec:
   replicas: 2
   selector:
@@ -62,7 +62,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: lab3
+  name: service-lab3
 spec:
   type: NodePort
   selector:
@@ -70,6 +70,7 @@ spec:
   ports:
     - port: 3000
       protocol: TCP
+      name: http
 ```
 
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/2356dd42-281e-48bd-b061-41c9be354aa4)
@@ -96,34 +97,37 @@ kind: Ingress
 metadata:
   name: lab3
 spec:
-  tls:
-  - hosts:
-    - lab3.local
-    secretName: tls-secret
   rules:
-  - host: lab3.local
+  - host: lab3.nsv
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: lab3
+            name: service-lab3
             port:
               number: 3000
+  tls:
+  - hosts:
+    - lab3.nsv
+    secretName: tls-secret
 ```
 - Создан ingress из созданного ранее файла конфигурации.
 
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/155b974b-35d3-4e95-a3e5-fc07d6325224)
 
-#### 4. Создание ingress
-- Создать ingress в minikube, где указан ранее импортированный сертификат, FQDN по которому вы будете заходить и имя сервиса который вы создали ранее.
-Если вы делаете эту работу на Windows/macOS для доступа к ingress вам необходимо использовать команду minikube tunnel к созданному ingress. Если вы делаете эту работу на Windows/macOS для доступа к ingress вам необходимо в hosts добавить ip address localhost и ваш FQDN. Если установлен Linux, то нужно указывать minikube ip.
-
 #### 5. Вход в веб приложение
+Если вы делаете эту работу на Windows/macOS для доступа к ingress вам необходимо использовать команду minikube tunnel к созданному ingress. Если вы делаете эту работу на Windows/macOS для доступа к ingress вам необходимо в hosts добавить ip address localhost и ваш FQDN. Если установлен Linux, то нужно указывать minikube ip.
 - В hosts пропишите FQDN и IP адрес вашего ingress и попробуйте перейти в браузере по FQDN имени.
 
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/deff2727-0528-45ac-ae1e-f92d064ceaa7)
+
+
 Войдите в веб приложение по вашему FQDN используя HTTPS и проверьте наличие сертификата.
+
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/4d219afe-2cd7-4d65-bd6d-91bd795f2ba5)
+
 
 Обычно в браузере это маленький замочек рядом с FQDN сайта, нажмите на него и сделайте скриншот с информацией.
 
