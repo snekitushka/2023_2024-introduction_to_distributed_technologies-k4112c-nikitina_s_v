@@ -75,10 +75,46 @@ spec:
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/2356dd42-281e-48bd-b061-41c9be354aa4)
 
 #### 3. Генерирование сертификата
-- Включить minikube addons enable ingress и сгенерировать TLS сертификат, импортировать сертификат в minikube.
+- Включен minikube addons enable ingress.
+
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/8a083591-5c46-47e2-b69c-2be2b47782f8)
+
+- Сгенерирован TLS сертификат.
+
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/3df5762f-df67-451e-8031-5f443a8b8de7)
+
+- Созданный сертификат импортирован в minikube.
+
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/d418805c-3574-4957-9342-df5277bf1f15)
+
 
 #### 4. Создание ingress
-- Создать ingress в minikube, где указан ранее импортированный сертификат, FQDN по которому вы будете заходить и имя сервиса который вы создали ранее.
+- Создан манифест ingress в minikube, где указан ранее импортированный сертификат, FQDN по которому будет воспроизводиться вход и имя сервиса который был создан ранее.
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: lab3
+spec:
+  tls:
+  - hosts:
+    - lab3.local
+    secretName: tls-secret
+  rules:
+  - host: lab3.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: lab3
+            port:
+              number: 3000
+```
+- Создан ingress из созданного ранее файла конфигурации.
+
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/155b974b-35d3-4e95-a3e5-fc07d6325224)
 
 #### 4. Создание ingress
 - Создать ingress в minikube, где указан ранее импортированный сертификат, FQDN по которому вы будете заходить и имя сервиса который вы создали ранее.
