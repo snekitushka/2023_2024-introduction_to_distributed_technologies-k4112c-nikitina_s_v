@@ -118,18 +118,26 @@ spec:
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/155b974b-35d3-4e95-a3e5-fc07d6325224)
 
 #### 5. Вход в веб приложение
-Если вы делаете эту работу на Windows/macOS для доступа к ingress вам необходимо использовать команду minikube tunnel к созданному ingress. Если вы делаете эту работу на Windows/macOS для доступа к ingress вам необходимо в hosts добавить ip address localhost и ваш FQDN. Если установлен Linux, то нужно указывать minikube ip.
+- В hosts добавлен ip address localhost и FQDN.
+
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/50395ce1-0c11-4144-ac27-cd542b1c1c39)
+
+- Для доступа к ingress использована команда `minikube tunnel` к созданному ingress.
+
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/74a6fc1a-3701-469f-9f5c-2b80e9c4adaf)
+
+- Выполнен вход в веб приложение по FQDN имени https://lab3.nsv.
+
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/ab9d937e-68b7-44b4-b43d-e5162b1081a4)
+
 - В hosts пропишите FQDN и IP адрес вашего ingress и попробуйте перейти в браузере по FQDN имени.
 
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/deff2727-0528-45ac-ae1e-f92d064ceaa7)
 
 
-Войдите в веб приложение по вашему FQDN используя HTTPS и проверьте наличие сертификата.
+- Просмотрены данные о сертификате.
 
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/4d219afe-2cd7-4d65-bd6d-91bd795f2ba5)
-
-
-Обычно в браузере это маленький замочек рядом с FQDN сайта, нажмите на него и сделайте скриншот с информацией.
 
 ### Схема организации контейнеров и сервисов:
 ФОТО
