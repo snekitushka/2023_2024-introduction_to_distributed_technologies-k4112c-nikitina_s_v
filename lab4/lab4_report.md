@@ -127,9 +127,16 @@ spec:
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/383c1559-562a-4c5c-a648-2ed7ddf7fa80)
 
 #### 5. Пинг "подов"
--Используя kubectl exec зайдите в любой "под" и попробуйте попинговать "поды" используя FQDN имя соседенего "пода", результаты пингов необходимо приложить к отчету.
+- Были найдены FQDN имена подов:
 
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/989aa405-94dd-4f56-b0b9-a56b00c2c153)
 
+- Используя `kubectl exec` был выполнен вход в "под" и попингованы "поды" используя FQDN имя соседнего "пода". Так как поды успешно пингуются, то это значит, что сетевая связь между ними настроена корректно.
+
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/786298cd-551d-471d-8b0b-e95dc5f8788b)
+
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/f3aa39c1-cb25-42f5-8c54-f37b6be8c7b2)
 
 ### Схема организации контейнеров и сервисов:
-ФОТО
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/4d74403b-01ff-4b68-a7ed-f8fd9aea1884)
+
