@@ -128,8 +128,6 @@ spec:
 
 - Выполнен вход в веб приложение по FQDN имени https://lab3.nsv.
 
-![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/ab9d937e-68b7-44b4-b43d-e5162b1081a4)
-
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/deff2727-0528-45ac-ae1e-f92d064ceaa7)
 
 
