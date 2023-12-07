@@ -29,7 +29,7 @@ data:
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/cee75cca-c703-4515-b35e-93ebbc3ab183)
 
 #### 2. Создание replicaSet с 2 репликами контейнера
-- Создан replicaSet с 2 репликами контейнера ifilyaninitmo/itdt-contained-frontend:master и используя ранее созданный configMap передать переменные REACT_APP_USERNAME, REACT_APP_COMPANY_NAME.
+- Создан replicaSet с 2 репликами контейнера ifilyaninitmo/itdt-contained-frontend:master и используя ранее созданный configMap переданы переменные REACT_APP_USERNAME, REACT_APP_COMPANY_NAME.
 ```
 apiVersion: apps/v1
 kind: ReplicaSet
