@@ -136,4 +136,5 @@ spec:
 ![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/4d219afe-2cd7-4d65-bd6d-91bd795f2ba5)
 
 ### Схема организации контейнеров и сервисов:
-ФОТО
+![image](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/assets/65435279/93a942d6-5379-409d-a6a9-38996660a804)
+
