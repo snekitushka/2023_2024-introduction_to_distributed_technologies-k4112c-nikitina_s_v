@@ -1,8 +1,4 @@
-# 2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v
-
-Лабораторные работы по предмету "Введение в распределенные технологии" 2023-2024  
-
-Автор: Никитина Снежана Владимировна, K4112c
+#  Лабораторные работы по предмету "Введение в распределенные технологии" 2023-2024  
 
 - [Лабораторная работа №1](https://github.com/snekitushka/2023_2024-introduction_to_distributed_technologies-k4112c-nikitina_s_v/blob/main/lab1)
 
